@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Анастасия Демидова](https://up.htmlacademy.ru/adaptive/29/user/2361147).
-* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena)
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
