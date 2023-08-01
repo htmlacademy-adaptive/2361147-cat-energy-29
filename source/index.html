@@ -8,19 +8,15 @@
 <!-- ПОСТАВИТЬ ARIA-LABEL НА ИНТЕРАКТИВНЫЕ ЭЛЕМЕНТЫ -->
 
 <body class="page__body">
-  <header class="page-header">
-    <!-- Есть подозрение, что я накосячила с классами логотипов-->
-    <a class="page-header__logo logo-image" href="#" aria-label="Логотип Кэт Энерджи">
-      <span class="visually-hidden">Логотип Кэт "Энерджи</span>
-    </a>
-    <a class="page-header__logo logo-text" href="#" aria-label="Логотип Кэт Энерджи">
-      <span class="visually-hidden">Логотип Кэт "Энерджи</span>
-    </a>
-    <nav class="page-navigation navigation">
-      <button class="navigation__toggle" type="button" aria-label="Открыть меню">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="navigation__wrapper">
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <a class="main-header__brand-name" href="#">
+        <span class="visually-hidden">Фирменный знак Кэт Энерджи</span>
+      </a>
+      <a class="main-header__logo logo" href="#">
+        <span class="visually-hidden">Логотип Кэт Энерджи</span>
+      </a>
+      <nav class="main-header__navigation navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link navigation__link--current" href="#" aria-current="page">главная</a>
@@ -32,147 +28,139 @@
             <a class="navigation__link" href="#">подбор программы</a>
           </li>
         </ul>
+      </nav>
+      <button class="main-header__burger" type="button">
+        <span class="visually-hidden">Открывает и закрывает меню</span>
+      </button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main__hero hero">
+      <h1 class="hero__title">Функциональное питание для котов
+        <span class="visually-hidden"> Кэт Энерджи</span>
+      </h1>
+      <p class="hero__text">Занялся собой? Займись котом!</p>
+      <img class="hero__image" src="#" width="709" height="609"
+        alt="Продукция Кэт энерджи, оранжевая упаковка с курицей 500 грамм.">
+      <a class="hero__link" href="#">подобрать программу</a>
+    </section>
+    <section class="main__programs programs">
+      <h2 class="visually-hidden">Программы функционального питания для котов</h2>
+      <ul class="programs__list">
+        <li class="programs__item programs__item--slim">
+          <h3 class="programs__title">похудение</h3>
+          <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+            Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="programs__link" href="#">каталог slim</a>
+        </li>
+        <li class="programs__item programs__item--pro">
+          <h3 class="programs__title">набор массы</h3>
+          <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+            поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="programs__link" href="#">каталог pro</a>
+        </li>
+      </ul>
+    </section>
+    <section class="main__advantages advantages">
+      <h2 class="visually-hidden">Функционально питание Кэт Энерджи, все самое полезное и вкусное для вашего любимца.
+      </h2>
+      <p class="advantages__text">Как это работает</p>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <p class="advantages__description advantages__description--leaf">Функциональное питание содержит только
+            полезные питательные вещества.</p>
+        </li>
+        <li class="advantages__item">
+          <p class="advantages__description advantages__description--powder">Выпускается в виде порошка, который нужно
+            лишь
+            залить кипятком и готово.</p>
+        </li>
+        <li class="advantages__item">
+          <p class="advantages__description advantages__description--cutlery">Замените один-два приема обычной еды на
+            наше
+            функциональное питание.</p>
+        </li>
+        <li class="advantages__item">
+          <p class="advantages__description advantages__description--clock">Уже через месяц наслаждайтесь изменениями к
+            лучшему вашего питомца!</p>
+        </li>
+      </ul>
+    </section>
+    <section class="main__example example">
+      <h2 class="example__title">Живой пример</h2>
+      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+        часов в день.</p>
+      <div class="example__wrapper">
+        <p class="example__result">5 кг</p>
+        <p class="example__term">снижение веса</p>
       </div>
-    </nav>
-    <main class="page__main main">
-      <!-- валидатор говорит элемент mainне должен отображаться как потомок элемента header. не понимаю при чем тут header???? -->
-      <section class="main__hero hero">
-        <h1 class="visually-hidden">Магазин функционального питания для котов Кэт Энерджи</h1>
-        <h2 class="hero__title">Функциональное питание для котов</h2>
-        <p class="hero__text">Занялся собой? Займись котом!</p>
-        <img class="hero__image" src="#" width="" height=""
-          alt="Продукция Кэт энерджи, оранжевая упаковка с курицей 500 грамм.">
-        <a class="hero__link" href="#" type="button">подобрать программу</a>
-      </section>
-      <section class="main__service service">
-        <!-- возможное название для секции programs -->
-        <h2 class="visually-hidden">Программы функционального питания для котов</h2>
-        <ul class="service__list">
-          <li class="service__item">
-            <img class="service__image" src="" alt="Изящный черный кот.">
-            <h3 class="service__sub-title">похудение</h3>
-            <p class="service__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
-              Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="service__link" href="#" type="button">каталог slim</a>
-          </li>
-          <li class="service__item">
-            <img class="service__image" src="" alt="Мускулистая черная пантера.">
-            <h3 class="service__sub-title">набор массы</h3>
-            <p class="service__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
-              поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="service__link" href="#" type="button">каталог pro</a>
-          </li>
-        </ul>
-      </section>
-      <section class="main__advantages advantages">
-        <h2 class="visually-hidden">Функционально питание Кэт Энерджи, все самое полезное и вкусное для вашего любимца.
-        </h2>
-        <p class="advantages__text">Как это работает</p>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <div class="advantages__wrapper">
-              <p class="advantages__description advantages__description--one">Функциональное питание содержит только
-                полезные питательные вещества.</p>
-            </div>
-          </li>
-          <li class="advantages__item">
-            <div class="advantages__wrapper">
-              <p class="advantages__description advantages__description--two">Выпускается в виде порошка, который нужно
-                лишь залить кипятком и готово.</p>
-            </div>
-          </li>
-          <li class="advantages__item">
-            <div class="advantages__wrapper">
-              <p class="advantages__description advantages__description--three">Замените один-два приема обычной еды на
-                наше функциональное питание.</p>
-            </div>
-          </li>
-          <li class="advantages__item">
-            <div class="advantages__wrapper">
-              <p class="advantages__description advantages__description--four">Уже через месяц наслаждайтесь изменениями
-                к лучшему вашего питомца!</p>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="main__example example">
-        <!-- возможное название секции effect -->
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-          часов в день.</p>
-        <div class="example__wrapper">
-          <p class="example__result">5 кг</p>
-          <p class="example__term">снижение веса</p>
-        </div>
-        <div class="example__wrapper--term">
-          <p class="example__result">60 дней</p>
-          <p class="example__term">затрачено времени</p>
-        </div>
-        <p class="example__description">Затраты на питание: 15 000 руб.</p>
-        <img class="example__image example__image--before" width="" height=""
-          alt="Упитаный котик серо-белого цвета до программы функционнального питания Кэт Энерджи.">
-        <img class="example__image example__image--after" width="" height=""
-          alt="Стройный и довольный котик серо-белого цвета после программы питания Кэт Энерджи.">
+      <div class="example__wrapper example__wrapper--term">
+        <p class="example__result">60 дней</p>
+        <p class="example__term">затрачено времени</p>
+      </div>
+      <p class="example__description">Затраты на питание: 15 000 руб.</p>
+      <img class="example__image example__image--before" src="#"
+        alt="Упитаный котик серо-белого цвета до программы функционнального питания Кэт Энерджи.">
+      <img class="example__image example__image--after" src="#"
+        alt="Стройный и довольный котик серо-белого цвета после программы питания Кэт Энерджи.">
 
-        <div class="example__container slider">
-          <button class="slider__button slider__button--before" type="button">
-            <span class="visually-hidden">Было</span>
-          </button>
-          <button class="slider__toggle" aria-label="Ползунок результата котика"></button>
-          <button class="slider__button slider__button--after" type="button">
-            <span class="visually-hidden">Стало</span>
-          </button>
-        </div>
-      </section>
-    </main>
-    <footer class="page__footer footer">
-      <div class="footer__wrapper contacts">
-        <b class="contacts__message">приглашаем к сотрудничеству дилеров!</b>
-        <div class="contacts__address address">
-          <h2 class="visually-hidden">Контакты</h2>
-          <p class="address__street">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="address__city">Санкт-Петербург</p>
-        </div>
+      <div class="example__container slider">
+        <button class="slider__button slider__button--before" type="button">
+          <span class="visually-hidden">Было</span>
+        </button>
+        <button class="slider__toggle" aria-label="Ползунок результата котика"></button>
+        <button class="slider__button slider__button--after" type="button">
+          <span class="visually-hidden">Стало</span>
+        </button>
       </div>
-      <img class="footer__map" src="#" width="" height="" alt="Карта">
-      <!-- Понятно, что карту надо делать по другому, но мы пока до этого не дошли. Хотела поставить тег map, но решила не мудрить -->
-      <div class="footer__container">
-        <a class="footer__logo logo" href="#">
-          <img class="logo__text" src="#" width="" height="" alt="Логотип Кэт энерджи.">
-        </a>
-        <div class="footer__socials socials">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="socials__list">
-            <li class="socials__item">
-              <a class="socials__link socials__link--vkontakte" href="#">
-                <span class="visually-hidden">Vkontakte</span>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link socials__link--youtube" href="#">
-                <span class="visually-hidden">Youtube</span>
-              </a>
-            </li>
-            <li class=" socials__item">
-              <a class="socials__link socials__link--telegram" href="#">
-                <span class="visually-hidden">Telegram</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <h2 class="visually-hidden">Копирайт HTML Academy</h2>
-          <a class="copyright__logo-academy" href="#">
-            <span class="visually-hidden">Логотип HTML Academy</span>
-          </a>
-          <a class="copyright__logo-academy" href="#">
-            <span class="visually-hidden">Логотип HTML Academy</span>
-          </a>
-        </div>
-      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
 
-    </footer>
+    <section class="main-footer__contacts contacts">
+      <b class="contacts__message">приглашаем к сотрудничеству дилеров!</b>
+      <h2 class="visually-hidden">Контакты</h2>
+      <p class="address__street">ул. Большая Конюшенная, д. 19/8
+        <span class="address__city">Санкт-Петербург</span>
+      </p>
+    </section>
+    <section class="main-footer__map map">
+      <h2 class="visually-hidden">Наше местоположение</h2>
+      <a class="map__link" href="#" aria-label="Карта.">
+        <img class="map__image" src="#" width="320" height="362" alt="Наш адрес на карте.">
+      </a>
+    </section>
+    <a class="main-footer__logo logo" href="#">
+      <span class="visually-hidden">Логотип Кэт "Энерджи</span>
+    </a>
+    <section class="main-footer__socials socials">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a class="socials__link socials__link--vkontakte" href="#">
+            <span class="visually-hidden">Vkontakte</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--youtube" href="#">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+        <li class=" socials__item">
+          <a class="socials__link socials__link--telegram" href="#">
+            <span class="visually-hidden">Telegram</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="main-footer__copyright copyright">
+      <a class="copyright__link" href="#" aria-label="Логотип">
+        <h2 class="copyright__title">HTML Academy</h2>
+      </a>
+    </section>
+
+  </footer>
 
 </body>
 
