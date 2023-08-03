@@ -9,22 +9,23 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__brand-name" href="#">
+      <a class="main-header__brand-icon" href="index.html">
         <span class="visually-hidden">Фирменный знак Кэт Энерджи</span>
       </a>
-      <a class="main-header__logo logo" href="#">
+      <a class="main-header__logo logo" href="index.html">
         <span class="visually-hidden">Логотип Кэт Энерджи</span>
       </a>
       <nav class="main-header__navigation navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="#">главная</a>
+            <a class="navigation__link" href="index.html">главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">каталог продукции</a>
+            <a class="navigation__link" href="catalog.html">каталог продукции</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--current" href="#" aria-current="page">подбор программы</a>
+            <a class="navigation__link navigation__link--current" href="form.html" aria-current="page">подбор
+              программы</a>
           </li>
         </ul>
       </nav>
@@ -36,9 +37,9 @@
   <main class="main">
     <section class="main__filters filters">
       <h1 class="filters__title">Подбор программы</h1>
-      <b class="filters__message">Заполните анкету, и мы подберем
-        программу питания для вашего кота</b>
-      <form class=" filters__forms forms" action="#" method="get">
+      <p class="filters__description">Заполните анкету, и мы подберем
+        программу питания для вашего кота</p>
+      <form class=" filters__forms forms" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="forms__group">
           <legend class="visually-hidden">Данные кота</legend>
           <ul class="forms__list">
@@ -60,15 +61,15 @@
           <legend class="visually-hidden">Ваша цель?</legend>
           <ul class="forms__list">
             <li class="forms__item">
-              <input class="forms__input" type="radio" name="slim" id="slim" value="slim" checked="">
+              <input class="forms__input" type="radio" name="purpose" id="slim" value="slim" checked="">
               <label class="forms__label" for="slim">Похудение</label>
             </li>
             <li class="forms__item">
-              <input class="forms__input" type="radio" name="gain" id="gain" value="gain">
+              <input class="forms__input" type="radio" name="purpose" id="gain" value="gain">
               <label class="forms__label" for="gain">Набор массы</label>
             </li>
             <li class="forms__item">
-              <input class="forms__input " type="radio" name="advice" id="advice" value="advice">
+              <input class="forms__input " type="radio" name="purpose" id="advice" value="advice">
               <label class="forms__label" for="advice">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
@@ -119,12 +120,10 @@
     </section>
   </main>
   <footer class="main-footer">
-
     <section class="main-footer__contacts contacts">
-      <b class="contacts__message">приглашаем к сотрудничеству дилеров!</b>
-      <h2 class="visually-hidden">Контакты</h2>
-      <p class="address__street">ул. Большая Конюшенная, д. 19/8
-        <span class="address__city">Санкт-Петербург</span>
+      <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
+        <span class="contacts__address contacts__address--city">Санкт-Петербург</span>
       </p>
     </section>
     <section class="main-footer__map map">
@@ -133,7 +132,7 @@
         <img class="map__image" src="#" width="320" height="362" alt="Наш адрес на карте.">
       </a>
     </section>
-    <a class="main-footer__logo logo" href="#">
+    <a class="main-footer__logo logo" href="index.html">
       <span class="visually-hidden">Логотип Кэт "Энерджи</span>
     </a>
     <section class="main-footer__socials socials">
@@ -149,7 +148,7 @@
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
-        <li class=" socials__item">
+        <li class="socials__item">
           <a class="socials__link socials__link--telegram" href="#">
             <span class="visually-hidden">Telegram</span>
           </a>
@@ -161,7 +160,6 @@
         <h2 class="copyright__title">HTML Academy</h2>
       </a>
     </section>
-
   </footer>
 </body>
 
