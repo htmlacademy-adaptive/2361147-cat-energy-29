@@ -1,1 +1,42 @@
-// Начните писать стили здесь
+// общие стили и шрифты
+@import "./global/fonts.scss";
+@import "./global/custom-properties.scss";
+@import "./global/global.scss";
+@import "./global/visually-hidden.scss";
+// стили БЭМ блоков
+@import "./blocks/main-header.scss";
+@import "./blocks/main-header__wrapper.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/burger.scss";
+@import "./blocks/main.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/example.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/map.scss";
+@import "./blocks/socials.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/cards-list.scss";
+@import "./blocks/products-list.scss";
+@import "./blocks/present.scss";
+@import "./blocks/filters.scss";
+@import "./blocks/forms.scss";
+@import "./blocks/push-button.scss";
+@import "./blocks/page.scss";
+
+
+
+
+
+
+
+
+
+
+
+
