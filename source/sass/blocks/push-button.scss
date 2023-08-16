@@ -1,0 +1,19 @@
+.push-button {
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  color: var(--main-light);
+  background-color: var(--basic-green);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0;
+  padding: 8px 20px;
+  display: block;
+  text-align: center;
+}
+
+.push-button--show {
+  color: var(--grey-dark-special);
+  background-color: var(--grey-basic);
+}

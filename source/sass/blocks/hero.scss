@@ -1,0 +1,29 @@
+.main__hero {
+  background-color: var(--grenn-opacity);
+  padding-top: 27px;
+  margin-bottom: 20px;
+  text-align: center;
+  
+}
+
+.hero__title {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 36px;
+  color: var(--main-light);
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.hero__text {
+  line-height: 14px;
+  color: var(--main-light);
+  text-transform: uppercase;
+  margin-bottom: 302px;
+}
+
+.hero__link {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 3px;
+}

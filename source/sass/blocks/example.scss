@@ -1,0 +1,44 @@
+.main__example {
+  background-color: var(--grey-special);
+  padding: 25px 0 40px 0;
+}
+
+.example__title {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.example__text {
+  font-family: var(--extra-font);
+  color: var(--grey-dark-special);
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.example__characteristic{
+  margin: 0;
+}
+
+.example__result {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.example__term {
+  font-family: var(--extra-font);
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--grey-dark-special);
+  text-align: center;
+}
+
+.example__description {
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+
+}
